@@ -1,6 +1,14 @@
+<p align="center">
+  <img alt="Logo - Rocketseat" src="./src/assets/logoRocketseat.png" width="200px" />
+</p>
+
 # Jogo de Adivinhação - React
 
 Este é um projeto de um jogo de adivinhação desenvolvido em React. O objetivo do jogo é que o jogador tente adivinhar um número aleatório gerado pelo sistema, recebendo dicas se o palpite está muito alto ou muito baixo até acertar.
+
+<p align="center">
+  <img alt="Agendamento de petshop" src="./src/assets/preview.png" width="100%">
+</p>
 
 ## 🚀 Tecnologias Utilizadas
 
