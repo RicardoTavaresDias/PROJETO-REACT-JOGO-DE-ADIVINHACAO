@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+# Jogo de Adivinhação - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de um jogo de adivinhação desenvolvido em React. O objetivo do jogo é que o jogador tente adivinhar um número aleatório gerado pelo sistema, recebendo dicas se o palpite está muito alto ou muito baixo até acertar.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Expanding the ESLint configuration
+- [React.js](https://reactjs.org/) - Biblioteca principal para criação da interface do usuário.
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Linguagem de programação utilizada no projeto.
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) - Para estruturação das páginas.
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Para estilização do jogo.
+- [Node.js](https://nodejs.org/) - Para gestão de pacotes e ambiente de desenvolvimento.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📋 Requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Antes de instalar e executar o projeto, certifique-se de ter instalado em seu ambiente:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (versão recomendada: 16+)
+- [Git](https://git-scm.com/)
+- Um navegador moderno (Google Chrome, Firefox, Edge, etc.)
+
+## 📦 Instalação e Execução
+
+Siga os passos abaixo para clonar e rodar o projeto localmente:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/RicardoTavaresDias/PROJETO-REACT-JOGO-DE-ADIVINHACAO.git
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd PROJETO-REACT-JOGO-DE-ADIVINHACAO
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Execute o projeto:
+   ```bash
+   npm run dev
+   ```
+
+5. O projeto estará disponível no navegador em:
+   ```
+   http://localhost:3000
+   ```
+
+## 🎮 Como Jogar
+
+- Ao iniciar o jogo, um número aleatório será gerado dentro de um intervalo definido.
+- O jogador deve inserir um palpite no campo de entrada e clicar no botão para submeter.
+- O jogo responderá se o palpite está muito alto, muito baixo ou correto.
+- O jogador pode continuar tentando até acertar.
+- Após acertar, o jogo exibe uma mensagem de sucesso e oferece a opção de reiniciar.
+
+## 📂 Estrutura do Projeto
+
+O projeto possui a seguinte estrutura de diretórios:
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+PROJETO-REACT-JOGO-DE-ADIVINHACAO/
+│-- src/
+│   │-- components/       # Componentes reutilizáveis do jogo
+│   │-- assets/           # Imagens e estilos
+│   │-- App.js            # Componente principal do jogo
+│   │-- index.js          # Ponto de entrada da aplicação
+│-- public/               # Arquivos públicos
+│-- package.json          # Dependências e scripts
+│-- README.md             # Documentação do projeto
 ```
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1453366829725330797). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Caso tenha alguma dúvida ou sugestão, fique à vontade para abrir uma issue ou entrar em contato!
+
+🎉 Divirta-se jogando! 🚀
+
